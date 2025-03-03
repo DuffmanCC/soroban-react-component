@@ -2,6 +2,9 @@
   "name": "soroban-react-component",
   "version": "1.0.0",
   "type": "module",
+  "main": "dist/soroban.umd.js",
+  "module": "dist/soroban.es.js",
+  "style": "dist/soroban-react-component.css",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
