@@ -1,18 +1,42 @@
 {
   "name": "soroban-react-component",
-  "version": "1.0.0",
+  "description": "A simple React component to render a Soroban (Japanese abacus)",
+  "version": "1.0.1",
   "type": "module",
-  "main": "dist/soroban.umd.js",
-  "module": "dist/soroban.es.js",
-  "style": "dist/soroban-react-component.css",
+  "main": "./dist/soroban.umd.js",
+  "module": "./dist/soroban.es.js",
+  "style": "./dist/soroban-react-component.css",
+  "keywords": [
+    "react",
+    "component",
+    "soroban",
+    "abacus",
+    "japanese"
+  ],
+  "author": "Carlos Ortiz",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "prepublish": "rm -rf ./dist && npm run build",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest"
   },
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DuffmanCC/soroban-react-component"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/soroban.es.js",
+      "require": "./dist/soroban.umd.js"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
