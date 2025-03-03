@@ -1,1 +1,2 @@
-export { default as Soroban } from "./Soroban";
+import Soroban from "./Soroban";
+export default Soroban;
