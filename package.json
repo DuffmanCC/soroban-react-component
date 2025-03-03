@@ -1,7 +1,7 @@
 {
   "name": "soroban-react-component",
   "description": "A simple React component to render a Soroban (Japanese abacus)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "./dist/soroban.umd.js",
   "module": "./dist/soroban.es.js",
@@ -38,8 +38,8 @@
     }
   },
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
