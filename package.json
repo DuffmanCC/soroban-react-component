@@ -13,7 +13,7 @@
     "abacus",
     "japanese"
   ],
-  "author": "Carlos Ortiz",
+  "author": "Carlos Ortiz <carlosor@gmail.com> (https://carlosortiz.dev/)",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -27,14 +27,15 @@
     "type": "git",
     "url": "git+https://github.com/DuffmanCC/soroban-react-component.git"
   },
+  "bugs": {
+    "url": "https://github.com/DuffmanCC/soroban-react-component/issues",
+    "email": "carlosor@gmail.com"
+  },
   "exports": {
     ".": {
       "import": "./dist/soroban.es.js",
       "require": "./dist/soroban.umd.js"
     }
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
     "react": "^19.0.0",
