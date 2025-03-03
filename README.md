@@ -14,7 +14,7 @@ npm install soroban-react-component
 
 ```
 import Soroban from 'soroban-react-component';
-import "soroban-react-component/dist/soroban-react-component.css";
+import "soroban-react-component/dist/index.css";
 
 function App() {
   return <Soroban data={1472} columns={7} />;
