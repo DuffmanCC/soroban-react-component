@@ -1,14 +1,16 @@
 import react from "@vitejs/plugin-react";
+import dts from "vite-plugin-dts";
+
 import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), dts()],
   build: {
     lib: {
       entry: "./src/index.ts",
-      name: "SorobanComponent",
-      fileName: (format) => `soroban.${format}.js`,
+      name: "soroban-react-component",
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
@@ -19,5 +21,7 @@ export default defineConfig({
         },
       },
     },
+    sourcemap: true,
+    emptyOutDir: true,
   },
 });
