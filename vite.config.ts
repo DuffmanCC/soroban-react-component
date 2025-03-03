@@ -19,6 +19,12 @@ export default defineConfig({
           react: "React",
           "react-dom": "ReactDOM",
         },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name?.endsWith(".css")) {
+            return "index.css"; // 🔹 Fuerza el nombre index.css
+          }
+          return assetInfo.name!;
+        },
       },
     },
     sourcemap: true,
