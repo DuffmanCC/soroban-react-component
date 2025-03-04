@@ -1,7 +1,7 @@
 {
   "name": "soroban-react-component",
   "description": "A simple React component to render a Soroban (Japanese abacus)",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "main": "./dist/index.umd.js",
   "exports": {
