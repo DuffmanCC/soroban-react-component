@@ -17,7 +17,7 @@
 
 .soroban__beam-line {
   height: 0.33rem;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   top: 0.33rem;
 }
