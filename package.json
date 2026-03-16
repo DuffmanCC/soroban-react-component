@@ -1,7 +1,7 @@
 {
   "name": "soroban-react-component",
   "description": "A simple React component to render a Soroban (Japanese abacus)",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "./dist/index.umd.js",
   "exports": {
@@ -37,8 +37,8 @@
     "email": "carlosor@gmail.com"
   },
   "peerDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "publishConfig": {
     "access": "public"
