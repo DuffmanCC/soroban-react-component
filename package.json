@@ -1,16 +1,16 @@
 {
   "name": "soroban-react-component",
   "description": "A simple React component to render a Soroban (Japanese abacus)",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "type": "module",
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.es.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
     },
     "./style": "./dist/index.css"
   },
@@ -52,8 +52,8 @@
     "@eslint/js": "^9.21.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
     "@types/node": "^22.13.9",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.21.0",

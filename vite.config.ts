@@ -15,20 +15,19 @@ export default defineConfig({
     lib: {
       entry: "./src/index.ts",
       name: "soroban-react-component",
-      fileName: (format) => `index.${format}.js`,
+      fileName: () => "index.js",
+      formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
-        },
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name?.endsWith(".css")) {
+          const fileName = assetInfo.names[0];
+
+          if (fileName.endsWith(".css")) {
             return "index.css"; // 🔹 Fuerza el nombre index.css
           }
-          return assetInfo.name!;
+          return fileName;
         },
       },
     },
